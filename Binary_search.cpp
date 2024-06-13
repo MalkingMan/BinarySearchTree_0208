@@ -81,12 +81,32 @@ public:
             return;
         }
         if (ptr != NULL)
-        (
+        {
             inorder(ptr->leftchild);
 			cout << ptr->info << " ";
 			inorder(ptr->rightchild);
+        }
+    
+    }
 
-        )
+    void preorder(Node* ptr)
+    {
+        if (ROOT == nullptr)
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr != NULL)
+        {
+			cout << ptr->info << " ";
+            inorder(ptr->leftchild);
+			inorder(ptr->rightchild);
+        }
+    
+    }
+
+   
+    
     }
 
 };
