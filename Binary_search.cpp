@@ -122,6 +122,21 @@ public:
     }
    
     
-    
 
 };
+
+int main()  
+{
+    Binarytree x;
+    while (true)
+    {
+        cout << "\nMenu" << endl;
+        cout << "1. Implement insert operation" << endl; 
+        cout << "2. Perform inorder traversal" << endl; 
+        cout << "3. Perform preorder tracersal" << endl; 
+        cout << "4. Implement postorder operation" << endl; 
+        cout << "5. Exit" << endl; 
+        cout << "\nEnter yout choice (1-5)" << endl; 
+    }
+    
+}
