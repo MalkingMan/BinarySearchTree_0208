@@ -20,9 +20,9 @@ class Node
 
 class Binarytree 
 {
-    public:
+public:
+    Node * ROOT;
 
-    Node * ROOT 
     Binarytree()
     {
         ROOT = nullptr; // Initializing ROOT to null
@@ -39,9 +39,12 @@ class Binarytree
         Node* currentNode = nullptr;
         search(element, parent, currentNode); // Locate the node which will be the parent of the node to be insert
 
-        
+        if (parent == nullptr) // If the parent is Null (Tree is empty)
+        {
+            
+        }
 
 
 
     }
-}
+};
